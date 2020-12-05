@@ -1,0 +1,59 @@
+.header{
+  background-color: #808080;
+  padding: 10px;
+  h1{
+    text-align: center;
+    color: #fff;
+  }
+}
+
+#error_explanation{
+  text-align: center;
+  background: #FFFFCC;
+  color: red;
+  margin: 20px;
+  padding: 10px;
+  ul{
+    list-style: none;
+    text-align: left;
+  }
+}
+
+.contacts_form{
+  text-align: justify;
+  background-color: #DCDCDC;
+  margin: 20px;
+  padding: 20px;
+
+  .contact_name{
+    margin: 10px;
+    input[type="text"]{
+      width: 100%;
+      height: 20px;
+      margin: 10px;
+    }
+  }
+
+  .contact_email{
+    margin: 10px;
+    input[type="text"]{
+      width: 100%;
+      height: 20px;
+      margin: 10px;
+    }
+  }
+
+  .contact_content{
+    margin: 10px;
+    input[type="text"]{
+      width: 100%;
+      height: 50px;
+      margin: 10px;
+    }
+  }
+
+  .submit_button{
+    padding: 5px;
+    margin: 10px;
+  }
+}

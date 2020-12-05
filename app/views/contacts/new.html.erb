@@ -1,0 +1,30 @@
+<header class = header>
+  <h1>Inquiry</h1>
+</header>
+<%= form_with(model: @contacts, local: true) do |form| %>
+  <% if @contacts.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= @contacts.errors.count %>件のエラーがあります。</h2>
+    <ul>
+    <% @contacts.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+  <div class="contacts_form">
+    <div class="contact_name">
+      <%= form.label :name %>
+      <%= form.text_field :name, placeholder: "Your Name" %>
+    </div>
+    <div class="contact_email">
+      <%= form.label :email %>
+      <%= form.text_field :email, placeholder: "Your Email" %>
+    </div>
+    <div class="contact_content">
+      <%= form.label :content %>
+      <%= form.text_field :content, placeholder: "Please enter inquiry within 140 characters" %>
+    </div>
+    <%= form.submit "Sent inquiry", class: "submit_button" %>
+  </div>
+<% end %>
